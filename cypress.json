@@ -1,0 +1,29 @@
+{
+  "defaultCommandTimeout": 100000,
+  "reporter":"mochawesome",
+  "env": {
+    "url": "https://rahulshettyacademy.com",
+    "url1": "https://bcv.social/login"
+    
+  },
+
+  "db": {
+    "userName": "ska",
+    "password": "Welcome@123",
+    "server": "sadbdemo.database.windows.net",
+    "options": {
+        "database": "satishkumardatabase",
+        "encrypt": true,
+        "rowCollectionOnRequestCompletion" : true
+    }
+  },
+
+  "retries":
+  {
+  "runMode": 0
+
+  },
+
+
+  "projectId": "udffuu"
+}

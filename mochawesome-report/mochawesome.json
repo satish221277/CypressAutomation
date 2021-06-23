@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-23T04:32:54.350Z",
+    "end": "2021-06-23T04:33:28.201Z",
+    "duration": 33851,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0c4233ad-9b95-4ddf-b119-502798cddc40",
+      "title": "",
+      "fullFile": "cypress/integration/Demotest/MyDemoASAPItest.js",
+      "file": "cypress/integration/Demotest/MyDemoASAPItest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5a2e24b9-09f6-45ea-b0b2-e2fd39a0b3ce",
+          "title": "AS API TEST ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "API validation",
+              "fullTitle": "AS API TEST  API validation",
+              "timedOut": null,
+              "duration": 29642,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'GET',\n  url: 'https://api.bcv.social/api/v1/analytics/reporting-query/75?p_account_id=-2&p_start_date=2021-05-01&p_end_date=2021-05-31&p_number_of_months=6&p_metric_name=facebook_post_engagement&p_social_network_name=snname',\n  headers: {\n    Authorization: 'Bearer MWM4OTY0MjRjMDY0Mjg2NmM2MjU4ODNlZGE0Mzg1YTE4Mzc1NmNmZmI1MmMyZWMzYjcyNDdhNjY5MTA4MDU0OQ'\n  }\n}).then(function (response) {\n  expect(response.status).to.eq(200);\n});",
+              "err": {},
+              "uuid": "9a193bf0-c924-4228-abe6-c3e88f19fa4f",
+              "parentUUID": "5a2e24b9-09f6-45ea-b0b2-e2fd39a0b3ce",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9a193bf0-c924-4228-abe6-c3e88f19fa4f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 29642,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}
