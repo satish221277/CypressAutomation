@@ -11,6 +11,7 @@
 //
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
+    import '@percy/cypress';
     Cypress.Commands.add("selectProduct", (productName) => { 
     cy.get('h4.card-title').each(($el, index, $list) => { 
     if($el.text().includes(productName))

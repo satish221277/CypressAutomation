@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2021-06-23T13:28:31.525Z",
-    "end": "2021-06-23T13:29:20.133Z",
-    "duration": 48608,
+    "start": "2021-06-29T13:03:31.794Z",
+    "end": "2021-06-29T13:03:33.330Z",
+    "duration": 1536,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,17 +18,17 @@
   },
   "results": [
     {
-      "uuid": "4f10fc87-9346-4409-bc64-d01d67d42da1",
+      "uuid": "f4716669-f754-48e9-8bc2-4980d6e380c8",
       "title": "",
-      "fullFile": "cypress/integration/Demotest/MyDemoASSadPanda.js",
-      "file": "cypress/integration/Demotest/MyDemoASSadPanda.js",
+      "fullFile": "cypress/integration/Demotest/Percyscreenshot.js",
+      "file": "cypress/integration/Demotest/Percyscreenshot.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "a3913afa-fa51-4c72-ab13-97a8fdcb1582",
-          "title": "Sad Panda test case",
+          "uuid": "3a67736f-911c-4b93-91e2-b84c55b463a2",
+          "title": "AS Report Test",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -36,23 +36,23 @@
           "tests": [
             {
               "title": "My first test case",
-              "fullTitle": "Sad Panda test case My first test case",
+              "fullTitle": "AS Report Test My first test case",
               "timedOut": null,
-              "duration": 40323,
+              "duration": 1038,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "cy.visit(Cypress.env('url1'));\ncy.get('#E-mail').type('satish.kumar@rategain.com');\ncy.get('#Password').type(Pass);\ncy.wait(2000);\ncy.get('.submit').click();\ncy.get('[data-testid=test-search-input]').type('Hotel Ramtin');\ncy.wait(5000);\ncy.get('.client-name-container > a').click();\ncy.get('.clientview-sidebar--inner > ul > :nth-child(4) > a > img').click();\ncy.get('.Reports__CardsOrPresetsDropdown__Wrapper > [data-testid=common-select-dropdown] > [data-testid=SelectToggleDropdownOpen] > .display').click();\ncy.get(':nth-child(5) > .Reports__PresetButton__Addon > .fa').click();\ncy.wait(10000);\ncy.get('.Reports__ReportsGroup__Container > :nth-child(1)').then(function (element) {\n  const actualtext = element.text();\n  cy.log(actualtext);\n  expect(actualtext).not.contains('Sad Panda');\n});",
+              "code": "cy.percySnapshot(star);\ncy.visit(Cypress.env('url1'));\ncy.get('#E-mail').type('satish.kumar@rategain.com');\ncy.get('#Password').type('Changeme@123');\ncy.wait(2000);\ncy.get('.submit').click();\ncy.get(':nth-child(3) > .thumbnail > .caption > .overview-head > .client-name-container > a').click();\ncy.get('.clientview-sidebar--inner > ul > :nth-child(4) > a > img').click();\ncy.get('.Reports__CardsOrPresetsDropdown__Wrapper > [data-testid=common-select-dropdown] > [data-testid=SelectToggleDropdownOpen] > .display').click();\ncy.get(':nth-child(8) > .Reports__PresetButton__Addon > .fa').click();\ncy.wait(10000);\ncy.get('.Reports__ReportCard__ReportRenderer').then(function (element) {\n  const actualtext = element.text();\n  cy.log(actualtext);\n  expect(actualtext).to.not.equal('Sad Panda');\n  cy.percySnapshot(end);\n});",
               "err": {
-                "message": "AssertionError: expected ' | Facebook Demographics: Total FanbaseSad PandaNo data available in this report!' to not include 'Sad Panda'",
-                "estack": "AssertionError: expected ' | Facebook Demographics: Total FanbaseSad PandaNo data available in this report!' to not include 'Sad Panda'\n    at Context.eval (https://bcv.social/__cypress/tests?p=cypress\\integration\\Demotest\\MyDemoASSadPanda.js:134:32)",
+                "message": "ReferenceError: star is not defined",
+                "estack": "ReferenceError: star is not defined\n    at Context.eval (https://bcv.social/__cypress/tests?p=cypress\\integration\\Demotest\\Percyscreenshot.js:104:22)",
                 "diff": null
               },
-              "uuid": "9c5e5ad9-6d79-4136-83a6-1ec64dde1a11",
-              "parentUUID": "a3913afa-fa51-4c72-ab13-97a8fdcb1582",
+              "uuid": "aa501eff-819b-4f98-90ce-9a5f643505f5",
+              "parentUUID": "3a67736f-911c-4b93-91e2-b84c55b463a2",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "9c5e5ad9-6d79-4136-83a6-1ec64dde1a11"
+            "aa501eff-819b-4f98-90ce-9a5f643505f5"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 40323,
+          "duration": 1038,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

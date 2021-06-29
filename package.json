@@ -15,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@percy/cypress": "^3.1.0",
     "cypress": "^7.3.0",
     "cypress-iframe": "^1.0.1",
     "cypress-sql-server": "^1.0.0",

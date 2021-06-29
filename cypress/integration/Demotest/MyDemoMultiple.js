@@ -3,7 +3,7 @@ describe('AS Report Test', function()
 {
 
     it ('FACEBOOK DEMOGRAPHICS: TOTAL FANBASE', function() {
-        cy.visit(Cypress.env('url1'))
+        cy.visit('/')
         cy.get('#E-mail').type('satish.kumar@rategain.com')
         cy.get('#Password').type('Changeme@123')
         cy.wait(2000)
@@ -27,7 +27,7 @@ describe('AS Report Test', function()
 })    
 
 it ('FACEBOOK TOTAL FANS', function() {
-    cy.visit(Cypress.env('url1'))
+    cy.visit('/')    
     cy.get('#E-mail').type('satish.kumar@rategain.com')
     cy.get('#Password').type('Changeme@123')
     cy.wait(2000)
